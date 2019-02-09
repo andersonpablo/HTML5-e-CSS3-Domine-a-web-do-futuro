@@ -1,0 +1,23 @@
+<!doctype HTML>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>A regra @font-face</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <style>
+            @font-face {
+                font-family: "Lobster";
+                font-style: normal;
+                font-weight: 400;
+                src: local("Lobster"), url(/fonts/lobster.woff) format("woff");
+            }
+            h1 {
+                font-family: "Lobster", cursive;
+            }
+        </style>
+        <script src="js/prefixfree.min.js"></script>
+    </head>
+    <body>
+        <h1>Trabalhando com @font-face</h1>
+    </body>
+</html>

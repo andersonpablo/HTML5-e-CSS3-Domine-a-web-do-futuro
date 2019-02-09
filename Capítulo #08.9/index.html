@@ -1,0 +1,59 @@
+<!doctype HTML>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Começando com keyframes</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <style>
+            @-webkit-keyframes appear {
+               0% {
+                   opacity: 0;
+                   -webkit-transform: scale(2);
+               }
+               70% {
+                   opacity: 1;
+                   -webkit-transform: scale(1);
+               }
+               100% {
+                    -webkit-transform: scale(1.2);
+               }
+           }
+           @-webkit-keyframes pulse {
+               0% {
+                   width: 0;
+                   height: 0;
+                   opacity: 1;
+                   top: 50px;
+                   left: 50px;
+               }
+               100% {
+                   width: 30px;
+                   height: 30px;
+                   opacity: 0;
+                   top: 35px;
+                   left: 35px;
+               }
+           }
+           h1 {
+               color: #000;
+               font-size: 1.4em;
+               text-align: center;
+               transform: scale(1.2);
+               transform-origin: 50% 50%;
+               -webkit-animation: appear 2s linear;
+           }
+           .loading {
+               background-color: #666;
+               border-radius: 50%;
+               font: 0/0 serif;
+               position: absolute;
+               -webkit-animation: pulse 1.5s infinite;
+           }
+        </style>
+        <script src="js/prefixfree.min.js"></script>
+    </head>
+    <body>
+        <h1>Bem vindo!</h1>
+        <span class="loading" title="Carregando...">Carregando...</span>
+    </body>
+</html>

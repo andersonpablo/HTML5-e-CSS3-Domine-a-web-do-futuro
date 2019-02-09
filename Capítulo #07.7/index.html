@@ -1,0 +1,72 @@
+<!doctype HTML>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Levando o usuário direto ao que importa com o autofocus</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <style>
+            * {
+                margin-left: 5px;
+            }
+            label {
+                display: inline-block;
+                font-size: 0.9em;
+                font-weight: bold;
+                width: 90px;
+            }
+            input, textarea {
+                display: inline-block;
+                width: 200px;
+                border: 1px solid #CCC;
+                box-shadow: inset 2px 2px 2px #EEE;
+                font-size: 0.9em;
+                padding: 2px 5px;
+            }
+            textarea {
+                height: 100px;
+            }
+            .hint {
+                background-color: #FFFBE4;
+                border-radius: 3px;
+                border: 1px solid #CCC;
+                box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+                display: none;
+                font-size: 0.8em;
+                margin-left: 20px;
+                padding: 3px;
+            }
+            input:focus + .hint, textarea:focus + .hint {
+                display: inline-block;
+            }
+            .error {
+                color: red;
+                display: block;
+                font-size: 0.8em;
+                font-style: italic;
+                margin: 5px 0 0 90px;
+            }
+        </style>
+        <script src="js/prefixfree.min.js"></script>
+    </head>
+    <body>
+        <form method="post" action="">
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" autofocus>
+                <span class="hint">Por exemplo, seunome@dominio.com.</span>
+                <span class="error">Preencha o seu e-mail corretamente.</span>
+            </p>
+            <p>
+                <label for="subject">Assunto:</label>
+                <input type="text" id="subject">
+                <span class="hint">Nos diga qual é o seu problema ou ideia.</span>
+            </p>
+            <p>
+                <label for="content">Mensagem:</label>
+                <textarea id="content"></textarea>
+                <span class="hint">Escreva a sua mensagem, em até 500 caracteres.</span>
+            </p>
+            <button>Enviar mensagem</button>
+        </form>
+    </body>
+</html>

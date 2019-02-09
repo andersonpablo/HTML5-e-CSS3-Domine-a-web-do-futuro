@@ -1,0 +1,49 @@
+<!doctype HTML>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Grids - Um padrão de estrutura para as suas páginas (flex-box)</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <style>
+            .flexbox {
+                display: flex;
+                height: 60px;
+                width: 300px;
+            }
+            .box {
+                color: #FFF;
+                display: block;
+                flex: auto;
+                font-weight: bold;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+            }
+            .one {
+                background-color: #8820DD;
+            }
+            .two {
+                background-color: #2BB15A;
+            }
+            .three {
+                background-color: #755322;
+            }
+            .four {
+                background-color: #02A3A3;
+            }
+            .five {
+                background-color: #C6363D;
+            }
+        </style>
+        <script src="js/prefixfree.min.js"></script>
+    </head>
+    <body>
+        <div class="flexbox">
+            <span class="one box">1</span>
+            <span class="two box">2</span>
+            <span class="three box">3</span>
+            <span class="four box">4</span>
+            <span class="five box">5</span>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype HTML>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Criando conteúdo através de CSS</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <style>
+            .tip::before {
+                content: "\261E";
+                margin-right: 10px;
+                font-size: 1.5em;
+            }
+            blockquote {
+                color: #444;
+                font-style: italic;
+            }
+            blockquote::before, blockquote::after {
+                color: #000;
+                font-size: 3em;
+            }
+            blockquote::before {
+                content: "\201C";
+            }
+            blockquote::after {
+                content: "\201D";
+            }
+        </style>
+        <script src="js/prefixfree.min.js"></script>
+    </head>
+    <body>
+        <p class="tip">Você sabia que...</p>    
+        <blockquote>O problema com citações na Internet é que você não pode confirmar a sua verecidade.</blockquote>
+    </body>
+</html>

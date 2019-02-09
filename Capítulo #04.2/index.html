@@ -1,0 +1,27 @@
+<!doctype HTML>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Compreendendo o Box model</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .box {
+                background-color: limegreen;
+                width: 250px;
+            }
+            .box-with-padding {
+                background-color: lightblue;
+                padding: 0 25px;
+                width: 250px;
+            }
+        </style>
+        <script src="js/prefixfree.min.js"></script>
+    </head>
+    <body>
+        <div class="box">elemento sem padding</div>
+        <div class="box-with-padding">elemento com padding</div>
+    </body>
+</html>
